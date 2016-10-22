@@ -1,2 +1,1 @@
-# mysqldump
-mysqldump script.
+# MMiyauchi"s ShellScript repository.
