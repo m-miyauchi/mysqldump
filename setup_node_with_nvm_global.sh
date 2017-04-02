@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 USER=`whoami`
 HOME=/home/${USER}
 # For Ubuntu
