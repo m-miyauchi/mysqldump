@@ -6,7 +6,7 @@ HOME=/home/${USER}
 echo "Starting setup nvm"
 echo "Start install nvm..."
 cd /usr/local/bin/
-git clone https://github.com/creationix/nvm.git ${HOME}/.nvm
+git clone https://github.com/creationix/nvm.git /usr/local/bin/.nvm
 cd /usr/local/bin/.nvm
 git checkout `git describe --abbrev=0 --tags`
 # Start nvm
