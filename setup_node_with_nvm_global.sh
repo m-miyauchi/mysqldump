@@ -3,7 +3,7 @@ USER=`whoami`
 HOME=/home/${USER}
 # For Ubuntu
 # Install nvm with git
-echo "Starting setup nvm and gulp."
+echo "Starting setup nvm"
 echo "Start install nvm..."
 cd /usr/local/bin/
 git clone https://github.com/creationix/nvm.git ${HOME}/.nvm
