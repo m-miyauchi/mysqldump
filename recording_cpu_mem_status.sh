@@ -2,16 +2,16 @@
 CPUSTATUS=cpu_status.txt
 MEMORYSTATUS=memory_status.txt
 PROCESSSTATUS=process_status.txt
-DATE=`date +%Y%m%d%H%M`
 INTERVALTIME=5
 TESTNUM=12
-OUTPUTDIR=/tmp/${TESTNUM}/cpu_mem_status/${DATE}
+DATE=`date +%Y%m%d%H%M`
+OUTPUTDIR=/tmp/${TESTNUM}/system_status/${DATE}
 
 if [ ! -e ${OUTPUTDIR} ]; then
   mkdir -p ${OUTPUTDIR}
 fi
 
-echo 'Recording CPU-load, Process statys and Memory Usage...'
+echo 'Recording CPU-load, Process status and Memory Usage...'
 echo 'Recorded data is here:' ${OUTPUTDIR}
 echo 'Exit recording: Ctrl + c'
 
