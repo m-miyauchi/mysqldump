@@ -4,7 +4,7 @@ MEMORYSTATUS=memory_status.txt
 DATE=`date +%Y%m%d%H%M`
 INTERVALTIME=1
 TESTNUM=12
-OUTPUTDIR=/tmp/cpu_mem_status/${DATE}
+OUTPUTDIR=/tmp/${TESTNUM}/cpu_mem_status/${DATE}
 
 if [ ! -e ${OUTPUTDIR} ]; then
   mkdir -p ${OUTPUTDIR}
