@@ -1,7 +1,7 @@
 #!/bin/sh
-CPUSTATUS=cpu_status.txt
-MEMORYSTATUS=memory_status.txt
-PROCESSSTATUS=process_status.txt
+CPULOG=cpu_status.txt
+MEMORYLOG=memory_status.txt
+PROCESSLOG=process_status.txt
 INTERVALTIME=5
 TESTNUM=12
 DATE=`date +%Y%m%d%H%M`
@@ -17,11 +17,11 @@ echo 'Exit recording: Ctrl + c'
 
 while true;
 do
-  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${PROCESSSTATUS};
-  ps aux >> ${OUTPUTDIR}/${PROCESSSTATUS};
-  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${CPUSTATUS};
-  uptime >> ${OUTPUTDIR}/${CPUSTATUS};
-  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${MEMORYSTATUS};
-  free -m >> ${OUTPUTDIR}/${MEMORYSTATUS};
+  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${PROCESSLOG};
+  ps aux >> ${OUTPUTDIR}/${PROCESSLOG};
+  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${CPULOG};
+  uptime >> ${OUTPUTDIR}/${CPULOG};
+  echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${MEMORYLOG};
+  free -m >> ${OUTPUTDIR}/${MEMORYLOG};
   sleep ${INTERVALTIME};
 done
