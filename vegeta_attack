@@ -4,7 +4,7 @@ LOGDIR=attack_results
 DATE=`date +%Y%m%d%H%M`
 
 # Usage
-# echo test_scenario_A.txt | ./vegeta_attack.sh
+# echo test_scenario_A | ./vegeta_attack.sh
 
 if [ -p /dev/stdin ] ; then
     TESTNAME=$(cat -)
