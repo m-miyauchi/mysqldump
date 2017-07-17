@@ -1,7 +1,7 @@
 #!/bin/sh
+VEGETA=`which vegeta`
 LOGDIR=attack_results
 DATE=`date +%Y%m%d%H%M`
-VEGETA=`which vegeta`
 
 # Usage
 # echo test_scenario_A.txt | ./vegeta_attack.sh
@@ -18,4 +18,4 @@ if [ ! -e ${LOGDIR} ]; then
 fi
 
 echo "攻撃を実行中…"
-cat ./test_scenario/${TESTNAME}.txt | ${VEGETA} attack -duration=1s --rate 1 | tee ${LOGDIR}/${TESTNAME}_${DATE}.bin | vegeta report
+cat ./test_scenario/${TESTNAME}.txt | ${VEGETA} attack -duration=1s --rate 1 | tee ${LOGDIR}/${TESTNAME}_${DATE}.bin | ${VEGETA} report
