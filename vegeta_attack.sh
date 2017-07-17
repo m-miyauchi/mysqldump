@@ -4,6 +4,9 @@ LOGDIR=attack_results
 DATE=`date +%Y%m%d%H%M`
 
 # Usage
+# 1. Install vegeta
+# https://github.com/tsenart/vegeta
+# 2. Prepare test-scenario for vegeta(format is .txt), and run command below.
 # echo test_scenario_A | ./vegeta_attack.sh
 
 if [ -p /dev/stdin ] ; then
