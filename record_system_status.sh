@@ -3,9 +3,9 @@ CPULOG=cpu_status.txt
 MEMORYLOG=memory_status.txt
 PROCESSLOG=process_status.txt
 INTERVALTIME=5
-TESTNUM=12
+TESTNAME=get_status
 DATE=`date +%Y%m%d%H%M`
-OUTPUTDIR=/tmp/${TESTNUM}/system_status/${DATE}
+OUTPUTDIR=/home/${whoami}/stress_test/${TESTNAME}_${DATE}
 
 if [ ! -e ${OUTPUTDIR} ]; then
   mkdir -p ${OUTPUTDIR}
