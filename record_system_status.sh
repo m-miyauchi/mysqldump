@@ -5,7 +5,7 @@ PROCESSLOG=process_status.txt
 INTERVALTIME=5
 TESTNAME=get_status
 DATE=`date +%Y%m%d%H%M`
-OUTPUTDIR=~/`whoami`/stress_test/${TESTNAME}_${DATE}
+OUTPUTDIR=~/stress_test/${TESTNAME}_${DATE}
 
 if [ ! -e ${OUTPUTDIR} ]; then
   mkdir -p ${OUTPUTDIR}
