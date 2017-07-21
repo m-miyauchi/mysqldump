@@ -18,7 +18,7 @@ echo 'Exit recording: Ctrl + c'
 while true;
 do
   echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${PROCESSLOG};
-  ps aux >> ${OUTPUTDIR}/${PROCESSLOG};
+  ps -U root u >> ${OUTPUTDIR}/${PROCESSLOG};
   echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${CPULOG};
   uptime >> ${OUTPUTDIR}/${CPULOG};
   echo `date "+%Y/%m/%d-%H:%M:%S"` >> ${OUTPUTDIR}/${MEMORYLOG};
