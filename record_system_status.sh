@@ -2,7 +2,7 @@
 CPULOG=cpu_status.txt
 MEMORYLOG=memory_status.txt
 PROCESSLOG=process_status.txt
-INTERVALTIME=5
+INTERVALTIME=15
 TESTNAME=get_status
 DATE=`date +%Y%m%d%H%M`
 OUTPUTDIR=~/stress_test/${TESTNAME}_${DATE}
