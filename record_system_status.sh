@@ -1,4 +1,4 @@
-#!/bin/sh -xe
+#!/bin/sh
 CPULOG=cpu_status.txt
 MEMORYLOG=memory_status.txt
 PROCESSLOG=process_status.txt
