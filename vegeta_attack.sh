@@ -1,8 +1,8 @@
 #!/bin/sh
 # Vegeta Parameters #####
-DURATION=1
-TIMEOUT=60
-RATE=1
+DURATION=60
+TIMEOUT=30
+RATE=10
 #########################
 VEGETA=`which vegeta`
 OUTPUTDIR=attack_results
