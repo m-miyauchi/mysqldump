@@ -9,6 +9,7 @@ OUTPUTDIR=attack_results
 DATE=`date +%Y%m%d%H%M%S`
 
 # Usage
+# chmod +x vegeta_attack.sh
 # echo test_shenario.txt | ./vegeta_attack.sh
 
 if [ -p /dev/stdin ] ; then
